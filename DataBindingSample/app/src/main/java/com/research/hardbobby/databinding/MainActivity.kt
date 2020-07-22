@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding =
             DataBindingUtil.setContentView(this, R.layout.activity_main) as ActivityMainBinding
-        setContentView(binding.root)
         binding.button.setOnClickListener {
             binding.textView.text = "Welcome Developer ViewBinding"
         }
